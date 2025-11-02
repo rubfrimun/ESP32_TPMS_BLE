@@ -3,7 +3,7 @@
 > Este repositorio documenta el proceso de ingeniería inversa para decodificar la trama de datos de sensores TPMS (Tire Pressure Monitoring System) que se comunican vía Bluetooth Low Energy (BLE). El objetivo es poder leer la presión, temperatura y otros datos de los sensores utilizando un microcontrolador ESP32.
 
 <p align="center">
-  <img src="docs/simulacion_2" alt="Montaje de prueba con jeringa y sensor TPMS" width="600">
+  <img src="docs/simulacion_2.jpg" alt="Montaje de prueba con jeringa y sensor TPMS" width="600">
 </p>
 
 ---
@@ -22,7 +22,7 @@ Los TPMS son pequeños dispositivos instalados en las válvulas de los neumátic
 Estos sensores en particular utilizan **BLE (Bluetooth Low Energy)** para emitir periódicamente un paquete de datos llamado **"Advertising Packet"**, que puede ser capturado por cualquier dispositivo BLE cercano, como nuestro ESP32.
 
 <p align="center">
-  <img src="docs/sensores_2" alt="Sensores TPMS utilizados en el proyecto" width="500">
+  <img src="docs/sensores_2.jpg" alt="Sensores TPMS utilizados en el proyecto" width="500">
 </p>
 
 ---
@@ -32,7 +32,7 @@ Estos sensores en particular utilizan **BLE (Bluetooth Low Energy)** para emitir
 El fabricante proporciona un "mapa de bytes" que describe la estructura de los datos. Sin embargo, esta información debe ser verificada y decodificada correctamente para ser útil.
 
 <p align="center">
-  <img src="docs/tramas_tpms_ble" alt="Mapa de bytes del fabricante" width="500">
+  <img src="docs/tramas_tpms_ble.jpg" alt="Mapa de bytes del fabricante" width="500">
 </p>
 
 ---
