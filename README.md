@@ -8,14 +8,14 @@
 
 ---
 
-### 🛠️ Hardware Utilizado
+### 🛠️ Hardware utilizado
 *   **Microcontrolador:** Placa de desarrollo ESP32.
 *   **Sensores:** 2x Sensores TPMS externos con conectividad BLE.
 *   **Herramientas de prueba:** Una jeringa de 60 ml y una válvula de neumático para crear una cámara de presión variable.
 
 ---
 
-### Parte 1: ¿Qué son los Sensores TPMS y cómo funcionan?
+### Parte 1: ¿Qué son los sensores TPMS y cómo funcionan?
 
 Los TPMS son pequeños dispositivos instalados en las válvulas de los neumáticos que monitorizan en tiempo real la presión y la temperatura. Su principal función es alertar al conductor de condiciones inseguras.
 
@@ -27,7 +27,7 @@ Estos sensores en particular utilizan **BLE (Bluetooth Low Energy)** para emitir
 
 ---
 
-### Parte 2: El Desafío - El Protocolo del Fabricante
+### Parte 2: El sesafío - El protocolo del fabricante
 
 El fabricante proporciona un "mapa de bytes" que describe la estructura de los datos. Sin embargo, esta información debe ser verificada y decodificada correctamente para ser útil.
 
@@ -37,7 +37,7 @@ El fabricante proporciona un "mapa de bytes" que describe la estructura de los d
 
 ---
 
-### Parte 3: El Experimento - Simulación de Presión
+### Parte 3: El experimento - Simulación de presión
 
 Para verificar qué bytes corresponden a la presión, se construyó un sistema de prueba simple y efectivo:
 1.  Se acopló una válvula de neumático a la punta de una jeringa de 60 ml.
@@ -46,7 +46,7 @@ Para verificar qué bytes corresponden a la presión, se construyó un sistema d
 
 ---
 
-### Parte 4: El Código de Diagnóstico
+### Parte 4: El código de diagnóstico
 
 Para capturar y analizar los datos, se desarrolló un script para el ESP32. Su única función es:
 1.  Escanear dispositivos BLE cercanos.
@@ -57,7 +57,7 @@ Para capturar y analizar los datos, se desarrolló un script para el ESP32. Su �
 
 ---
 
-### Parte 5: 📈 Análisis de los Datos Obtenidos
+### Parte 5: 📈 Análisis de los datos obtenidos
 
 Al ejecutar el código mientras se manipulaba la jeringa, se pudieron confirmar y clarificar las funciones de cada byte de la trama.
 
@@ -74,7 +74,7 @@ Al ejecutar el código mientras se manipulaba la jeringa, se pudieron confirmar 
 
 ---
 
-### Parte 6: 🚀 Conclusiones y Próximos Pasos
+### Parte 6: 🚀 Conclusiones y próximos pasos
 
 Con la trama de datos ya decodificada, el camino está claro para desarrollar una aplicación completa:
 -   **Firmware final:** Crear un programa que traduzca los bytes a valores legibles (PSI, Bar, °C, Voltios) y los muestre en una pantalla.
