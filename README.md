@@ -8,7 +8,7 @@
 
 ---
 
-### 🛠️ Hardware utilizado
+###  Hardware utilizado
 *   **Microcontrolador:** Placa de desarrollo ESP32.
 *   **Sensores:** 2x Sensores TPMS externos con conectividad BLE.
 *   **Herramientas de prueba:** Una jeringa de 60 ml y una válvula de neumático para crear una cámara de presión variable.
@@ -53,7 +53,7 @@ Para capturar y analizar los datos, se desarrolló un script para el ESP32. Su �
 2.  Filtrar por las direcciones MAC de nuestros dos sensores TPMS.
 3.  Imprimir la trama de datos cruda (7 bytes) en formato hexadecimal para su análisis posterior.
 
-> 🔗 **El código fuente completo para este escáner de diagnóstico se encuentra en el archivo [`tpms_diagnostic_scanner.ino`](tpms_diagnostic_scanner.ino).**
+>  **El código fuente completo para este escáner de diagnóstico se encuentra en el archivo [`tpms_diagnostic_scanner.ino`](tpms_diagnostic_scanner.ino).**
 
 ---
 
@@ -74,7 +74,7 @@ Al ejecutar el código mientras se manipulaba la jeringa, se pudieron confirmar 
 
 ---
 
-### Parte 6: 🚀 Conclusiones y próximos pasos
+### Parte 6:  Conclusiones y próximos pasos
 
 Con la trama de datos ya decodificada, el camino está claro para desarrollar una aplicación completa:
 -   **Firmware final:** Crear un programa que traduzca los bytes a valores legibles (PSI, Bar, °C, Voltios) y los muestre en una pantalla.
